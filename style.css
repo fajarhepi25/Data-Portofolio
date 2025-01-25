@@ -4,29 +4,36 @@ body {
 }
 
 .hero {
+  display: flex;
+  align-items: center;
   padding: 20px;
   background-color: #f9f9f9;
 }
 
 .profile-container {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  flex-shrink: 0; /* Prevent shrinking of the profile picture */
+  margin-right: 20px; /* Add spacing between profile picture and intro */
 }
 
 .profile-pic {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 2px solid #ccc;
 }
 
-.container {
-  margin-left: 120px; /* Adjust to give space for the profile picture */
+.intro {
+  flex-grow: 1; /* Allow the intro section to take up the remaining space */
 }
 
-.intro {
-  margin-top: 20px;
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
 }
 
 .skills {
@@ -50,14 +57,4 @@ body {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 24px;
-  color: #333;
-}
-
-p {
-  font-size: 16px;
-  color: #555;
 }
