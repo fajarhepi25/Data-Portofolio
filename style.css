@@ -22,7 +22,6 @@
     }
 
     .profile-container {
-      flex-shrink: 0; /* Prevents the profile picture from shrinking */
       margin-right: 20px; /* Adds spacing between the image and text */
     }
 
