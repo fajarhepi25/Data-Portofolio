@@ -14,23 +14,29 @@
     }
 
     .hero {
-      position: relative; /* Enables positioning of the profile picture */
+      display: flex; /* Aligns items horizontally */
+      align-items: center; /* Centers items vertically */
       padding: 40px 20px;
       background-color: #007bff; /* Blue background */
       color: white;
-      text-align: center; /* Centers the text */
+    }
+
+    .profile-container {
+      flex-shrink: 0; /* Prevents the profile picture from shrinking */
+      margin-right: 20px; /* Adds spacing between the image and text */
     }
 
     .profile-pic {
-      position: absolute; /* Positions the profile picture */
-      top: 20px; /* Distance from the top */
-      left: 0px; /* Distance from the left */
-      width: 100px;
-      height: 100px;
+      width: 120px; /* Profile picture size */
+      height: 120px;
       border-radius: 50%; /* Circular image */
       border: 3px solid white; /* White border for contrast */
-      object-fit: cover;
+      object-fit: cover; /* Ensures proper scaling */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    }
+
+    .intro {
+      flex-grow: 1; /* Allows the intro text to fill the remaining space */
     }
 
     h1 {
@@ -91,9 +97,13 @@
 </head>
 <body>
   <header class="hero">
-    <img src="images/profile_pic1.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Fajar Ari Sabtono</h1>
-    <p>ERP Consultant transitioning into Data Analytics with expertise in SQL, Python, Tableau, and Power BI.</p>
+    <div class="profile-container">
+      <img src="images/profile_pic1.jpg" alt="Profile Picture" class="profile-pic">
+    </div>
+    <div class="intro">
+      <h1>Fajar Ari Sabtono</h1>
+      <p>ERP Consultant transitioning into Data Analytics with expertise in SQL, Python, Tableau, and Power BI.</p>
+    </div>
   </header>
 
   <div class="section work-experiences">
