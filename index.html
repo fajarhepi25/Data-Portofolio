@@ -8,223 +8,127 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       color: #333;
-      background-color: #f0f0f0;
+      background-color: #f4f4f4;
+      line-height: 1.6;
     }
 
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      padding: 20px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .profile-container {
-      flex-shrink: 0;
-      margin-right: 20px;
+    header {
       text-align: center;
+      padding: 20px;
+      background-color: #007bff;
+      color: white;
     }
 
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      border: 3px solid #ddd;
+      border: 5px solid white;
+      margin: 20px auto;
+      display: block;
       object-fit: cover;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .intro {
-      flex-grow: 1;
-      min-width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
-      font-size: 26px;
-      margin: 0 0 10px;
-      color: #333;
+      font-size: 28px;
+      margin: 0;
     }
 
     p {
       font-size: 16px;
-      margin: 0;
-      color: #555;
+      margin: 10px 0;
     }
 
-    .work-experiences {
+    .section {
+      margin: 20px auto;
       padding: 20px;
-      background-color: #f9f9f9;
-      margin-top: 10px;
-    }
-
-    .work-experiences h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .experience {
-      margin-bottom: 20px;
-      padding: 15px;
-      border: 1px solid #ddd;
+      background-color: white;
       border-radius: 8px;
-      background-color: #ffffff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
     }
 
-    .experience h3 {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 5px;
+    h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #007bff;
     }
 
-    .experience p {
-      font-size: 14px;
-      color: #555;
-      margin: 5px 0;
+    .work-experiences ul, .skills ul {
+      list-style-type: none;
+      padding: 0;
     }
 
-    .experience ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-top: 5px;
-    }
-
-    .experience li {
-      font-size: 14px;
-      color: #555;
+    .work-experiences li, .skills li {
+      margin-bottom: 10px;
     }
 
     .skills {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 20px;
-      padding: 20px;
-    }
-
-    .skills h2 {
-      width: 100%;
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .skill {
-      flex: 1 1 calc(25% - 20px);
       text-align: center;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
     }
 
-    .skill img {
+    .skills img {
       width: 50px;
       height: 50px;
       margin-bottom: 10px;
     }
 
-    .skill h3 {
-      margin-bottom: 10px;
-      font-size: 18px;
-      color: #333;
-    }
-
-    .skill p {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .projects {
-      padding: 20px;
-    }
-
-    .projects h2 {
-      margin-bottom: 10px;
-      font-size: 22px;
-    }
-
-    .projects ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .projects li {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
     footer {
       text-align: center;
       padding: 10px;
-      background-color: #ffffff;
-      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #007bff;
+      color: white;
       margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="profile-container">
-      <img src="images/profile_pic1.jpg" alt="Profile Picture" class="profile-pic">
-    </div>
-    <div class="intro">
-      <h1>I am Fajar Ari Sabtono, from ERP Consultant switching into Data Analytics</h1>
-      <p>I build my foundation with basics of statistics and analytics tools such as SQL, Python, Tableau, and Power BI.</p>
-    </div>
+  <header>
+    <img src="images/profile_pic1.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Fajar Ari Sabtono</h1>
+    <p>ERP Consultant transitioning into Data Analytics with expertise in SQL, Python, Tableau, and Power BI.</p>
   </header>
 
-  <!-- Work Experiences Section -->
-  <section class="work-experiences">
+  <div class="section work-experiences">
     <h2>Work Experiences</h2>
-    <div class="experience">
-      <h3>Dynamics Ax Functional Consultant</h3>
-      <p><strong>Company:</strong> PT NEC INDONESIA</p>
-      <p><strong>Duration:</strong> Sep 2012 – Nov 2023</p>
-      <p>Have completed 11 projects of ERP system implementation from input data to reporting (manufacturing and retail industries) that generally results:</p>
+    <ul>
+      <li><strong>Dynamics Ax Functional Consultant</strong> at PT NEC INDONESIA (Sep 2012 – Nov 2023)</li>
+      <p>Completed 11 ERP implementation projects for manufacturing and retail industries, delivering:</p>
       <ul>
-        <li>Max 3 days trial to make sales report today posted on this day.</li>
-        <li>Only 1 month go live support to smooth monthly financial report.</li>
+        <li>Sales reports available within 3 days of data entry.</li>
+        <li>Smooth monthly financial reporting with 1-month go-live support.</li>
       </ul>
-    </div>
-  </section>
+    </ul>
+  </div>
 
-  <!-- Skills Section -->
-  <section class="skills">
-    <h2>My Skills</h2>
-    <div class="skill">
+  <div class="section skills">
+    <h2>Skills</h2>
+    <div>
       <img src="images/sql_icon.png" alt="SQL Icon">
       <h3>SQL</h3>
-      <p>Make a query call on big data to find the data we will use.</p>
+      <p>Query large datasets for actionable insights.</p>
     </div>
-    <div class="skill">
+    <div>
       <img src="images/data_analitics_icon.png" alt="Analytics Icon">
       <h3>Analytics</h3>
-      <p>Good analytical skills gained from professional experience and classes at RevoU.</p>
+      <p>Skilled in analyzing data with tools like Python and Power BI.</p>
     </div>
-    <div class="skill">
+    <div>
       <img src="images/dynamics_icon.png" alt="Dynamics Icon">
-      <h3>Dynamics</h3>
-      <p>Experience with Microsoft Dynamics AX for data extraction and reporting.</p>
+      <h3>Microsoft Dynamics</h3>
+      <p>Experience in data extraction and reporting.</p>
     </div>
-    <div class="skill">
+    <div>
       <img src="images/excel_icon.png" alt="Excel Icon">
-      <h3>Excel/Spreadsheet</h3>
-      <p>Skilled in Excel for data reporting and analysis tasks.</p>
+      <h3>Excel</h3>
+      <p>Advanced data reporting and visualization skills.</p>
     </div>
-  </section>
-
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Project 1: Describe your first project here.</li>
-    </ul>
-  </section>
+  </div>
 
   <footer>
     <p>&copy; 2023 Fajar Ari Sabtono</p>
