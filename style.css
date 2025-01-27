@@ -1,148 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fajar Ari Sabtono Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #f4f4f4;
-      line-height: 1.6;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
 
-    .hero {
-      display: flex; /* Aligns items horizontally */
-      align-items: center; /* Centers items vertically */
-      padding: 40px 20px;
-      background-color: #007bff; /* Blue background */
-      color: white;
-    }
+.hero {
+  display: flex; /* Aligns items horizontally */
+  align-items: center; /* Centers items vertically */
+  padding: 40px 20px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  position: relative; /* Enables positioning of the profile picture */
+}
 
-    .profile-container {
-      margin-right: 20px; /* Adds spacing between the image and text */
-    }
+.profile-container {
+  position: absolute; /* Allows placement in the top-left corner */
+  top: 20px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+}
 
-    .profile-pic {
-      width: 120px; /* Profile picture size */
-      height: 120px;
-      border-radius: 50%; /* Circular image */
-      border: 3px solid white; /* White border for contrast */
-      object-fit: cover; /* Ensures proper scaling */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    }
+.profile-pic {
+  width: 3cm; /* Sets width to 3cm */
+  height: 3cm; /* Sets height to 3cm */
+  border-radius: 50%; /* Circular image */
+  border: 3px solid white; /* White border for contrast */
+  object-fit: cover; /* Ensures proper scaling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
 
-    .intro {
-      flex-grow: 1; /* Allows the intro text to fill the remaining space */
-    }
+.intro {
+  flex-grow: 1; /* Allows the intro text to fill the remaining space */
+  margin-left: 3.5cm; /* Adds space to prevent overlap with the profile picture */
+}
 
-    h1 {
-      font-size: 28px;
-      margin: 0;
-    }
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
 
-    p {
-      font-size: 16px;
-      margin: 10px 0 0;
-    }
+p {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
 
-    .section {
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
-    }
+.section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
 
-    h2 {
-      font-size: 22px;
-      margin-bottom: 15px;
-      color: #007bff;
-    }
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
 
-    .work-experiences ul, .skills ul {
-      list-style-type: none;
-      padding: 0;
-    }
+.work-experiences ul, .skills ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-    .work-experiences li, .skills li {
-      margin-bottom: 10px;
-    }
+.work-experiences li, .skills li {
+  margin-bottom: 10px;
+}
 
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      text-align: center;
-    }
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
 
-    .skills img {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 10px;
-    }
+.skills img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #007bff;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <header class="hero">
-    <div class="profile-container">
-      <img src="images/profile_pic1.jpg" alt="Profile Picture" class="profile-pic">
-    </div>
-    <div class="intro">
-      <h1>Fajar Ari Sabtono</h1>
-      <p>ERP Consultant transitioning into Data Analytics with expertise in SQL, Python, Tableau, and Power BI.</p>
-    </div>
-  </header>
-
-  <div class="section work-experiences">
-    <h2>Work Experiences</h2>
-    <ul>
-      <li><strong>Dynamics Ax Functional Consultant</strong> at PT NEC INDONESIA (Sep 2012 – Nov 2023)</li>
-      <p>Completed 11 ERP implementation projects for manufacturing and retail industries, delivering:</p>
-      <ul>
-        <li>Sales reports available within 3 days of data entry.</li>
-        <li>Smooth monthly financial reporting with 1-month go-live support.</li>
-      </ul>
-    </ul>
-  </div>
-
-  <div class="section skills">
-    <h2>Skills</h2>
-    <div>
-      <img src="images/sql_icon.png" alt="SQL Icon">
-      <h3>SQL</h3>
-      <p>Query large datasets for actionable insights.</p>
-    </div>
-    <div>
-      <img src="images/data_analitics_icon.png" alt="Analytics Icon">
-      <h3>Analytics</h3>
-      <p>Skilled in analyzing data with tools like Python and Power BI.</p>
-    </div>
-    <div>
-      <img src="images/dynamics_icon.png" alt="Dynamics Icon">
-      <h3>Microsoft Dynamics</h3>
-      <p>Experience in data extraction and reporting.</p>
-    </div>
-    <div>
-      <img src="images/excel_icon.png" alt="Excel Icon">
-      <h3>Excel</h3>
-      <p>Advanced data reporting and visualization skills.</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2023 Fajar Ari Sabtono</p>
-  </footer>
-</body>
-</html>
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  margin-top: 20px;
+}
