@@ -39,6 +39,74 @@ body {
   color: #555;
 }
 
+/* Education Section */
+.education {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.education h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.education ul {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.education p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Work Experience Section */
+.work-experience {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.work-experience h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.work-experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work-experience li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.work-experience li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.work-experience ul ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+}
+
 /* Skills Section */
 .skills {
   display: grid;
@@ -49,6 +117,7 @@ body {
   margin: 2rem auto;
   max-width: 1200px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .skill {
