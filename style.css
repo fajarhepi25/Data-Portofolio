@@ -41,7 +41,31 @@ p {
   margin: 0;
   color: #555;
 }
+.work-experiences {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
 
+.work-experiences h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.experience {
+  margin-bottom: 15px;
+}
+
+.experience h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.experience p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 5px;
+}
 .skills {
   display: flex;
   flex-wrap: wrap;
