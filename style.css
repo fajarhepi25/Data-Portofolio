@@ -49,10 +49,16 @@ p {
 .work-experiences h2 {
   font-size: 20px;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .experience {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .experience h3 {
@@ -64,9 +70,19 @@ p {
 .experience p {
   font-size: 14px;
   color: #555;
-  margin: 0 0 5px;
+  margin: 5px 0;
 }
-.skills {
+
+.experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.experience li {
+  font-size: 14px;
+  color: #555;
+}.skills {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
