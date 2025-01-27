@@ -24,7 +24,7 @@
     .profile-pic {
       position: absolute; /* Positions the profile picture */
       top: 20px; /* Distance from the top */
-      left: 0px; /* Distance from the left */
+      left: -100px; /* Distance from the left */
       width: 100px;
       height: 100px;
       border-radius: 50%; /* Circular image */
