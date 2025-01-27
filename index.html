@@ -3,96 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fajar Ari Sabtono Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #f4f4f4;
-      line-height: 1.6;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #007bff;
-      color: white;
-    }
-
-    .hero h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 16px;
-      margin: 0;
-    }
-
-    .section {
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
-    }
-
-    .section h2 {
-      font-size: 22px;
-      margin-bottom: 15px;
-      color: #007bff;
-    }
-
-    .section ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .section li {
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #007bff;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
+  <title>Data Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="hero">
-    <h1>Fajar Ari Sabtono</h1>
-    <p>ERP Consultant transitioning into Data Analytics with expertise in SQL, Python, Tableau, and Power BI.</p>
+    <div class="container">
+      <img src="images/profile_pic1.jpg" alt="Profile Picture" class="profile-pic">
+      <div class="intro">
+        <h1>About Me, I am Fajar Ari Sabtono, from ERP Consultant switch into Data Analitics</h1>
+        <p>I build my Foundation with basic of statistics and analitics tools such as SQL, Phyton, Tableau, Power BI.</p>
+      </div>
+    </div>
   </header>
-
-  <div class="section work-experiences">
-    <h2>Work Experiences</h2>
-    <ul>
-      <li><strong>Dynamics Ax Functional Consultant</strong> at PT NEC INDONESIA (Sep 2012 – Nov 2023)</li>
-      <p>Completed 11 ERP implementation projects for manufacturing and retail industries, delivering:</p>
-      <ul>
-        <li>Sales reports available within 3 days of data entry.</li>
-        <li>Smooth monthly financial reporting with 1-month go-live support.</li>
-      </ul>
-    </ul>
-  </div>
-
-  <div class="section skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Microsoft Dynamics:</strong> Experience in data extraction and reporting.</li>
-      <li><strong>Excel:</strong> Advanced data reporting and visualization skills.</li>
-      <li><strong>SQL:</strong> Query large datasets for actionable insights.</li>
-      <li><strong>Python & Power BI:</strong> Analyzing data with tools like Python and Power BI, Tableau.</li>
-    </ul>
-  </div>
-
-  <footer>
-    <p>&copy; 2023 Fajar Ari Sabtono</p>
-  </footer>
+  <section class="skills">
+    <div class="skill">
+      <img src="images/sql_icon.png" alt="SQL Icon">
+      <h3>SQL</h3>
+      <p>Make a query call on big data to find the data we will use.</p>
+    </div>
+    <div class="skill">
+      <img src="images/data_analitics_icon.png" alt="Analytics Icon">
+      <h3>Analytics</h3>
+      <p>Good analytical skills gained from professional experience and classes at RevoU.</p>
+    </div>
+    <div class="skill">
+      <img src="images/dynamics_icon.png" alt="Dynamics Icon">
+      <h3>SAP</h3>
+      <p>Experience with Microsoft Dynamics AX for data extraction and reporting.</p>
+    </div>
+    <div class="skill">
+      <img src="images/excel_icon.png" alt="Excel Icon">
+      <h3>Excel/Spreadsheet</h3>
+      <p>Skilled in Excel for data reporting and analysis tasks.</p>
+    </div>
+  </section>
 </body>
 </html>
