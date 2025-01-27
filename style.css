@@ -7,42 +7,34 @@ body {
 }
 
 .hero {
-  display: flex; /* Aligns items horizontally */
-  align-items: center; /* Centers items vertically */
+  text-align: center; /* Centers the header content */
   padding: 40px 20px;
   background-color: #007bff; /* Blue background */
   color: white;
-  position: relative; /* Enables positioning of the profile picture */
 }
 
 .profile-container {
-  position: absolute; /* Allows placement in the top-left corner */
-  top: 20px; /* Distance from the top */
-  left: 20px; /* Distance from the left */
+  display: inline-block; /* Keeps the profile picture aligned with text */
+  margin-bottom: 20px;
 }
 
 .profile-pic {
-  width: 3cm; /* Sets width to 3cm */
-  height: 3cm; /* Sets height to 3cm */
+  width: 100px; /* Reduced size for better layout */
+  height: 100px;
   border-radius: 50%; /* Circular image */
-  border: 3px solid white; /* White border for contrast */
+  border: 3px solid white;
   object-fit: cover; /* Ensures the image fills the area proportionally */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
-.intro {
-  flex-grow: 1; /* Allows the intro text to fill the remaining space */
-  margin-left: 3.5cm; /* Adds space to prevent overlap with the profile picture */
-}
-
 h1 {
-  font-size: 28px;
-  margin: 0;
+  font-size: 32px;
+  margin: 10px 0 5px;
 }
 
 p {
-  font-size: 16px;
-  margin: 10px 0 0;
+  font-size: 18px;
+  margin: 0 0 10px;
 }
 
 .section {
@@ -55,7 +47,7 @@ p {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 15px;
   color: #007bff;
 }
@@ -63,17 +55,18 @@ h2 {
 .work-experiences ul, .skills ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .work-experiences li, .skills li {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
-  text-align: center;
 }
 
 .skills img {
