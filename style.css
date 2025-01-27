@@ -3,35 +3,34 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f4f4f4; /* Light background for better readability */
+  background-color: #f4f4f4;
 }
 
 .hero {
-  display: flex; /* Enables flexbox for alignment */
-  align-items: center;
-  justify-content: center; /* Centers the content horizontally */
+  display: flex; /* Aligns items horizontally */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers the content in the container */
   padding: 40px 20px;
   background-color: #007bff; /* Blue background */
   color: white;
-  position: relative;
 }
 
 .profile-container {
-  position: relative;
-  margin-right: 20px; /* Adds space between the image and text */
+  flex-shrink: 0; /* Prevents the profile picture from shrinking */
+  margin-right: 20px; /* Adds spacing between the image and text */
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px solid white;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 120px; /* Profile picture size */
+  height: 120px;
+  border-radius: 50%; /* Circular image */
+  border: 5px solid white; /* White border for contrast */
+  object-fit: cover; /* Ensures proper scaling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 .intro {
-  text-align: left; /* Aligns the intro text to the left */
+  text-align: left; /* Aligns text to the left */
 }
 
 h1 {
@@ -67,22 +66,11 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  margin-top: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 footer {
   text-align: center;
   padding: 15px;
   background-color: #007bff;
-  color: #ffffff;
+  color: white;
   margin-top: 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
