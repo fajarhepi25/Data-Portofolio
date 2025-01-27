@@ -7,34 +7,40 @@ body {
 }
 
 .hero {
-  text-align: center; /* Centers the header content */
-  padding: 40px 20px;
+  display: flex; /* Aligns items horizontally */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Even spacing for items */
+  padding: 20px 40px;
   background-color: #007bff; /* Blue background */
   color: white;
 }
 
 .profile-container {
-  display: inline-block; /* Keeps the profile picture aligned with text */
-  margin-bottom: 20px;
+  flex-shrink: 0; /* Prevents the profile picture from shrinking */
 }
 
 .profile-pic {
-  width: 100px; /* Reduced size for better layout */
-  height: 100px;
+  width: 150px; /* Reduced size for better balance */
+  height: 150px;
   border-radius: 50%; /* Circular image */
-  border: 3px solid white;
-  object-fit: cover; /* Ensures the image fills the area proportionally */
+  border: 5px solid white; /* White border for contrast */
+  object-fit: cover; /* Ensures proper scaling */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
+.intro {
+  flex-grow: 1; /* Allows the intro text to fill the remaining space */
+  margin-left: 20px; /* Adds space between the profile picture and text */
+}
+
 h1 {
-  font-size: 32px;
-  margin: 10px 0 5px;
+  font-size: 28px;
+  margin: 0;
 }
 
 p {
-  font-size: 18px;
-  margin: 0 0 10px;
+  font-size: 16px;
+  margin: 10px 0 0;
 }
 
 .section {
@@ -43,36 +49,36 @@ p {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #007bff;
-}
-
-.work-experiences ul, .skills ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.work-experiences li, .skills li {
-  margin-bottom: 10px;
-  font-size: 16px;
+  max-width: 1000px;
 }
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid layout for better alignment */
   gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 .skills img {
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.skills h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.skills p {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
 }
 
 footer {
