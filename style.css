@@ -26,7 +26,7 @@ body {
   height: 3cm; /* Sets height to 3cm */
   border-radius: 50%; /* Circular image */
   border: 3px solid white; /* White border for contrast */
-  object-fit: cover; /* Ensures proper scaling */
+  object-fit: cover; /* Ensures the image fills the area proportionally */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
