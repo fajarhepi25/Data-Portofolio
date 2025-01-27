@@ -16,8 +16,8 @@ body {
 
 .profile-container {
   position: absolute; /* Places the profile picture in the center overlapping the header */
-  top: -50px;
-  left: 50%;
+  top: 0px;
+  left: 0%;
   transform: translateX(-50%);
 }
 
