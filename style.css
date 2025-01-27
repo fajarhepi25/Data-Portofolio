@@ -21,7 +21,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile-pic {
+.profile_pic1 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -97,7 +97,7 @@ body {
   border-radius: 8px;
 }
 
-.work-experience li strong {
+.work-experience lii  {
   display: block;
   margin-bottom: 0.5rem;
 }
