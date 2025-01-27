@@ -21,8 +21,8 @@ body {
 }
 
 .profile-pic {
-  width: 120px; /* Increased for better visibility */
-  height: 120px;
+  width: 20px; /* Increased for better visibility */
+  height: 20px;
   border-radius: 50%;
   border: 3px solid #ddd; /* Thicker border for aesthetics */
   object-fit: cover; /* Ensures image scales properly */
