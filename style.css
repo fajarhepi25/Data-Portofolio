@@ -18,7 +18,7 @@
       padding: 40px 20px;
       background-color: #007bff; /* Blue background */
       color: white;
-      text-align: left; /* Centers the text */
+      text-align: center; /* Centers the text */
     }
 
     .profile-pic {
