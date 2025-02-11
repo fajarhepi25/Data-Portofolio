@@ -27,7 +27,7 @@ body {
 
 .profile_pic1 {
   width: 30px;
-  height: 30px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover; 
   border: 5px solid #d1c8b3; 
@@ -40,14 +40,13 @@ body {
 }
 
 .intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .intro p {
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   color: #555;
 }
 
@@ -141,13 +140,13 @@ body {
 }
 
 .skill img {
-  width: 60px;
+  width: 30px;
   margin-bottom: 1rem;
 }
 
 .skill h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
   color: #333;
 }
 
