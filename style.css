@@ -140,37 +140,50 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Skills Section */
+/* Skills Section (Matching Width with Work Experience) */
 .skills {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures equal width for items */
+  gap: 1.5rem; /* Space between grid items */
   padding: 2rem;
   background-color: #ffffff;
-  margin: 2rem auto;
+  max-width: 900px; /* Match Work Experience section width */
+  margin: 0 auto; /* Centers the section */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  text-align: center;
 }
 
+/* Individual Skill Cards */
 .skill {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 1.5rem;
   background-color: #f4f4f4;
   border-radius: 8px;
+  min-height: 150px; /* Ensures all cards have the same height */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
 }
 
+/* Skill Icons */
 .skill img {
-  width: 30px;
+  width: 50px;
   margin-bottom: 1rem;
 }
 
+/* Skill Text */
 .skill h3 {
-  font-size: 0.6rem;
-  margin-bottom: 0.2rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
   color: #333;
 }
 
+/* Hover Effect */
 .skill:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
