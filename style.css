@@ -143,13 +143,11 @@ body {
 /* Skills Section */
 .skills {
   display: grid;
-  gap: 1rem;
   padding: 2rem;
   background-color: #ffffff;
   margin: 2rem auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  text-align: center;
 }
 
 .skill {
