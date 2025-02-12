@@ -36,13 +36,13 @@ body {
 }
 
 .intro h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .intro p {
   margin-bottom: 0.9rem;
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   color: #555;
 }
 
@@ -55,7 +55,7 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center; /* Centers the email text */
-  font-size: 0.9rem; /* Smaller font size */
+  font-size: 1.5rem; /* Smaller font size */
 }
 
 .contact a {
