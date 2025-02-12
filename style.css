@@ -143,7 +143,6 @@ body {
 /* Skills Section */
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
   gap: 1rem;
   padding: 2rem;
   background-color: #ffffff;
