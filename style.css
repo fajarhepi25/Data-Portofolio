@@ -140,51 +140,44 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Skills Section (Matching Width with Work Experience) */
+/* Skills Section - List Style */
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures equal width for items */
-  gap: 1.5rem; /* Space between grid items */
-  padding: 2rem;
-  background-color: #ffffff;
   max-width: 900px; /* Match Work Experience section width */
-  margin: 0 auto; /* Centers the section */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Individual Skill Cards */
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto; /* Centering */
   padding: 1.5rem;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   border-radius: 8px;
-  min-height: 150px; /* Ensures all cards have the same height */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Skill Icons */
-.skill img {
-  width: 50px;
-  margin-bottom: 1rem;
+/* Skills List */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Skill Text */
-.skill h3 {
-  font-size: 1rem;
+/* Individual Skill Item */
+.skills li {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem; /* Smaller font */
+  background: #f8f9fa; /* Light background */
+  padding: 0.6rem 1rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+/* Skill Icons as Bullets */
+.skills li img {
+  width: 18px; /* Small icon size */
+  margin-right: 0.8rem;
 }
 
 /* Hover Effect */
-.skill:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.skills li:hover {
+  background: #e9ecef;
 }
 
 /* Project List Section */
