@@ -16,24 +16,19 @@ body {
 /* Header Section */
 .hero {
   display: flex;
-  /*flex-direction: row; */
   justify-content: space-evenly;
   align-items: flex-start;
   background: linear-gradient(135deg, #f1f1f1, #ffffff);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-  padding: 20px 15px; /* Reduced padding */
+  padding: 20px 15px;
   text-align: center;
   border-radius: 10px;
-  min-height: 10vh; /* Reduced height */
+  min-height: 10vh;
 }
 
-.profile_pic1 {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover; 
-  border: 4px solid #d1c8b3; 
-  margin-bottom: 1rem;
+.profile_pic {
+  width: 10%;
+  height: auto;
 }
 
 .intro h1 {
@@ -55,17 +50,17 @@ body {
   max-width: 800px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  text-align: center; /* Centers the email text */
-  font-size: 1rem; /* Smaller font size */
+  text-align: center;
+  font-size: 1rem;
 }
 
 .contact a {
-  color: #007bff; /* Link color */
+  color: #007bff;
   text-decoration: none;
 }
 
 .contact a:hover {
-  text-decoration: underline; /* Underline link on hover */
+  text-decoration: underline;
 }
 
 /* Education Section */
@@ -126,56 +121,38 @@ body {
   border-radius: 8px;
 }
 
-.work-experience lii  {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.work-experience li h3 {
-  font-size: 1.2rem; /* Added for consistency */
-  margin-bottom: 0.5rem;
-}
-.work-experience ul ul {
-  list-style: disc inside;
-  margin-top: 0.5rem;
-}
-
-/* Skills Section - List Style */
+/* Skills Section */
 .skills {
-  max-width: 900px; /* Match Work Experience section width */
-  margin: 0 auto; /* Centering */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 1.5rem;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Skills List */
 .skills ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Individual Skill Item */
 .skills li {
   display: flex;
   align-items: center;
-  font-size: 0.85rem; /* Smaller font */
-  background: #f8f9fa; /* Light background */
+  font-size: 0.85rem;
+  background: #f8f9fa;
   padding: 0.6rem 1rem;
   margin-bottom: 0.5rem;
   border-radius: 6px;
   transition: background 0.2s ease;
 }
 
-/* Skill Icons as Bullets */
 .skills li img {
-  width: 18px; /* Small icon size */
+  width: 18px;
   margin-right: 0.8rem;
 }
 
-/* Hover Effect */
 .skills li:hover {
   background: #e9ecef;
 }
@@ -185,11 +162,12 @@ body {
   padding: 2rem;
   background-color: #f9f9f9;
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 900px; /* Adjust width to match other sections */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
+/* Project Title */
 .project-list h2 {
   text-align: center;
   font-size: 2rem;
@@ -197,17 +175,53 @@ body {
   color: #333;
 }
 
+/* Project List */
 .project-list ul {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
   padding: 0;
   text-align: left; /* Aligns the list items to the left */
 }
 
+/* Individual Project Item */
 .project-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   color: #555;
-  padding-left: 1.5rem; /* Indents list items for better alignment */
+  padding: 1.5rem;
+  background-color: #ffffff; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
 
+.project-list li:hover {
+  transform: translateY(-5px); /* Hover effect for a subtle lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Project Titles for Each Section (Background, Method, Result) */
+.project-list .project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Previews (Background, Method, Result) */
+.project-list .project-preview {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Add small icons for each section for visual interest */
+/*.project-list .project-preview img {
+  width: 20px; /* Small icon for visual appeal */
+  margin-right: 10px; /* Spacing between icon and text */
+}*/
+
+/* Space between items */
+.project-list li p {
+  margin-bottom: 1rem; /* Ensures proper spacing between paragraphs */
 }
