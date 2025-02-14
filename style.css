@@ -27,8 +27,8 @@ body {
 }
 
 .profile_pic {
-  width: 10%;
-  height: auto;
+  width: 140px;
+  height: 140px;
 }
 
 .intro h1 {
@@ -150,6 +150,7 @@ body {
 
 .skills li img {
   width: 18px;
+  height: 18px;
   margin-right: 0.8rem;
 }
 
