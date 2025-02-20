@@ -7,19 +7,22 @@
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header class="hero">
-    <img src="images/profile_pic1.jpg" alt="Fajar Ari Sabtono" class="profile_pic">
-    <div class="intro">
-      <h1>Fajar Ari Sabtono</h1>
-      <p>ERP Consultant transitioning into Data Analytics.</p>
-      <p>Contact: <a href="mailto:fajarhepi@gmail.com">fajarhepi@gmail.com</a></p>
-    </div>
-  </header>
+<header class="hero">
+  <img src="images/profile_pic1.jpg" alt="Fajar Ari Sabtono" class="profile_pic">
+  <div class="intro">
+    <h1>Fajar Ari Sabtono</h1>
+    <p>ERP Consultant transitioning into Data Analytics.</p>
+    <p>Contact: <a href="mailto:fajarhepi@gmail.com">fajarhepi@gmail.com</a></p>
+  </div>
+</header>
 
   <!-- Education Section -->
   <section class="education">
-    <h2>Education</h2>
+  <details>
+      <summary class="collapsible-button">
+      <h2>Education</h2>
+    </summary>
+    
     <ul>
       <li>Universitas Brawijaya (Accounting)</li>
       <li>Revou
@@ -29,11 +32,15 @@
         </div>
       </li>
     </ul>
+    </details>
   </section>
 
   <!-- Work Experience Section -->
-  <section class="work-experience">
-    <h2>Work Experiences</h2>
+<section class="work-experience">
+  <details>
+    <summary class="collapsible-button">
+      <h2>Work Experiences</h2>
+    </summary>
     <ul>
       <li>
         <strong>Dynamics Ax Functional Consultant at PT NEC INDONESIA (Sep 2012 – Nov 2023)</strong>
@@ -44,17 +51,42 @@
         </ul>
       </li>
     </ul>
+    </details>
   </section>
 
-  <!-- Skills Section -->
-  <section class="skills">
-    <ul>
-      <li><img src="images/sql_icon.png" alt="sql_icon"> Query large datasets for actionable insights</li>
-      <li><img src="images/data_analitics_icon.png" alt="data_analitics_icon"> Analyzing data with tools like Python and Power BI, Tableau</li>
-      <li><img src="images/dynamics_icon.png" alt="dynamics_icon"> Dynamics AX and Microsoft platform data extraction and reporting</li>
-      <li><img src="images/excel_icon.png" alt="excel_icon"> Excel/Spreadsheet for data reporting and analysis tasks</li>
-    </ul>
-  </section>
+<section class="skills">
+  <details>
+    <summary class="collapsible-button">
+      <h2>Skills</h2>
+    </summary>
+        <ul>
+            <li>
+                <div class="skill-item">
+                    <img src="images/sql_icon.png" alt="sql_icon">
+                    <span>Query large datasets for actionable insights</span>
+                </div>
+            </li>
+            <li>
+                <div class="skill-item">
+                    <img src="images/data_analitics_icon.png" alt="data_analitics_icon">
+                    <span>Analyzing data with tools like Python and Power BI, Tableau</span>
+                </div>
+            </li>
+            <li>
+                <div class="skill-item">
+                    <img src="images/dynamics_icon.png" alt="dynamics_icon">
+                    <span>Dynamics AX and Microsoft platform data extraction and reporting</span>
+                </div>
+            </li>
+            <li>
+                <div class="skill-item">
+                    <img src="images/excel_icon.png" alt="excel_icon">
+                    <span>Excel/Spreadsheet for data reporting and analysis tasks</span>
+                </div>
+            </li>
+        </ul>
+    </details>
+</section>
 
 <!-- Project List Section -->
 <section class="project-list">
@@ -67,7 +99,7 @@
         <a href="https://drive.google.com/file/d/1ad77Eq-n7k6WLz_zXkRepZMpQaY7nzUA/view?usp=drive_link" target="_blank">View Project</a>
       </div>
       <div class="project-preview">
-        <strong>Method:</strong> Used linear regression model and RFM clustering  in Python to analyze the data.
+        <strong>Method:</strong> Used statistical models in Python to analyze the data.
       </div>
       <div class="project-preview">
         <strong>Result:</strong> Identified key sales trends and presented them in a Tableau.
