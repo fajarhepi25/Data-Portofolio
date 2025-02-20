@@ -16,58 +16,58 @@ body {
 /* Header Section */
 .hero {
   display: flex;
+  /*justify-content: center; */
   align-items: center;
-  justify-content: space-between;
   background: linear-gradient(135deg, #f1f1f1, #ffffff);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-  padding: 20px 15px;
+  padding: 20px ; /* Reduced padding */
   text-align: center;
-  border-radius: 10px;
-  min-height: 10vh;
+  border-radius: 5px;
+  min-height: 10vh; /* Reduced height */
+  gap : 20px;
 }
 
-.profile_pic {
+.profile_pic1 {
   width: 140px;
   height: 140px;
-  border-radius: 50%;  /* Keeps the profile picture circular */
-  object-fit: cover;
-  margin-right: 20px;  /* Space between profile and right content */
-}
-
-.intro {
-  flex: 1; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 2px solid #d1c8b3; 
+  margin-right: 20px;
+  margin-bottom: 1rem;
 }
 
 .intro h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem auto;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem; 
 }
 
 .intro p {
-  margin-bottom: 0.5rem auto;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
   color: #555;
 }
 
+
 /* Contact Section */
 .contact {
-  padding: 15px;
+  padding: 5px;
   background-color: #ffffff;
-  margin: 0.5rem auto;
-  max-width: 300px;
+  margin: 0.2rem auto;
+  max-width: 800px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  text-align: center;
-  font-size: 1rem;
+  border-radius: 6px;
+  text-align: center; /* Centers the email text */
+  font-size: 0.5rem; /* Smaller font size */
 }
 
 .contact a {
-  color: #007bff;
+  color: #007bff; /* Link color */
   text-decoration: none;
 }
 
 .contact a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline link on hover */
 }
 
 /* Education Section */
@@ -145,24 +145,61 @@ body {
 }
 
 .skills li {
+  margin-bottom: 0.5rem;
+}
+
+/* Skill item styling */
+.skill-item {
   display: flex;
   align-items: center;
   font-size: 0.85rem;
   background: #f8f9fa;
   padding: 0.6rem 1rem;
-  margin-bottom: 0.5rem;
   border-radius: 6px;
   transition: background 0.2s ease;
 }
 
-.skills li img {
+.skill-item img {
   width: 18px;
   height: 18px;
-  margin-right: 0.8rem;
+  margin-right: 10px; /* Space between icon and description */
 }
 
-.skills li:hover {
+.skill-item span {
+  flex-grow: 1; /* Allow description to take up remaining space */
+}
+
+.skill-item:hover {
   background: #e9ecef;
+}
+
+/* Make 'Skills' clickable and collapsible */
+.collapsible-button {
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  outline: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.collapsible-button h2 {
+  margin: 0;
+}
+
+.collapsible-button:hover {
+  color: #007bff;
+}
+
+details[open] summary h2 {
+  color: #007bff;
 }
 
 /* Project List Section */
