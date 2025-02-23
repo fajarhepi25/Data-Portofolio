@@ -16,8 +16,8 @@ body {
 /* Header Section */
 .hero {
   display: flex;
-  /*justify-content: center; */
-  align-items: center;
+  justify-content: space-evenly; 
+  align-items:stretch;
   background: linear-gradient(135deg, #f1f1f1, #ffffff);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
   padding: 20px ; /* Reduced padding */
@@ -28,8 +28,8 @@ body {
 }
 
 .profile_pic1 {
-  width: 140px;
-  height: 140px;
+  width: auto;
+  height: auto;
   border-radius: 50%;
   object-fit: cover; 
   border: 2px solid #d1c8b3; 
