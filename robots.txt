@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://fajarhepi25.github.io/Data-Portofolio/
+
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Sitemap: https://fajarhepi25.github.io/Data-Portofolio/
+
